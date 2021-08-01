@@ -9,11 +9,13 @@ app.use(express.json())
 app.use(cors())
 
 const db = mysql.createConnection({
-    user: "root",
-    host: "127.0.0.1",
-    password: "password",
-    database: "authentication"
+    user: "bedbcc899ad740",
+    host: "eu-cdbr-west-01.cleardb.com",
+    password: "6dd59bad",
+    database: "heroku_1d5bdd75274446c"
 })
+//mysql://bedbcc899ad740:6dd59bad@eu-cdbr-west-01.cleardb.com/heroku_1d5bdd75274446c?reconnect=true
+
 
 app.post('/signup', (req, res) => {
     const username = req.body.username
