@@ -8,7 +8,7 @@ const saltRounds = 10
 app.use(express.json())
 app.use(cors())
 
-const db = mysql.createConnection({
+const db = mysql.createPool({
     user: "bedbcc899ad740",
     host: "eu-cdbr-west-01.cleardb.com",
     password: "6dd59bad",
