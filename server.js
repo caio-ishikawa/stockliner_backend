@@ -89,6 +89,6 @@ app.get('/comment_sections/:stock_name', (req, res, next) => {
 })
 
 
-app.listen(process.env.PORT || 3002, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log('server running on port ${PORT}')
 })
